@@ -24,7 +24,7 @@ if True:
 
     server = smtplib.SMTP('mail.infomaniak.com', 25)
     server.starttls()
-    server.login(fromaddr, "pass")
+    server.login(fromaddr, "")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
